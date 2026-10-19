@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Forms</title>
+    <style>
+        fieldset{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="table.html" target="_blank">
+        <label for="fullname">FullName:</label>
+        <input type="text" id="fullname" name="fullname" required> <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required> <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required> <br><br>
+
+        <!-- Checkboxes: All share the same name, but have distinct IDs and values -->
+        <fieldset>
+            <legend>Favorite Programming Languages:</legend>
+            
+            <input type="checkbox" id="lang-python" name="languages" value="python">
+            <label for="lang-python">Python</label><br>
+
+            <input type="checkbox" id="lang-javascript" name="languages" value="javascript">
+            <label for="lang-javascript">JavaScript</label><br>
+
+            <input type="checkbox" id="lang-html" name="languages" value="html">
+            <label for="lang-html">HTML</label><br>
+
+            <input type="checkbox" id="lang-sql" name="languages" value="sql">
+            <label for="lang-sql">SQL</label>
+        </fieldset> <br>
+
+        <!-- Radio Buttons: Shared name creates the group, unique IDs bind to labels -->
+        <fieldset>
+            <legend>Gender:</legend>
+            
+            <input type="radio" id="gender-male" name="gender" value="male" required>
+            <label for="gender-male">Male</label><br>
+
+            <input type="radio" id="gender-female" name="gender" value="female">
+            <label for="gender-female">Female</label><br>
+
+            <input type="radio" id="gender-other" name="gender" value="other">
+            <label for="gender-other">Other</label>
+        </fieldset> <br>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
